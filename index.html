@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chegg Hiring Manager - Enhanced Word Processor</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <!-- Login Form -->
+    <div class="login-container" id="loginContainer">
+        <div class="login-card">
+            <div class="login-header">
+                <h2>Login</h2>
+                <div class="login-decoration"></div>
+            </div>
+            <div class="form-group">
+                <input type="text" id="username" placeholder="Username" required>
+                <span class="input-focus-effect"></span>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Password" required>
+                <span class="input-focus-effect"></span>
+            </div>
+            <button class="btn-3d" onclick="login()">
+                <span>Login</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Editor Section -->
+    <div class="container hidden" id="editorContainer">
+        <div class="buttons">
+            <button class="btn-3d btn-danger" onclick="logout()">
+                <span>Logout</span>
+            </button>
+            <button class="btn-3d btn-primary" onclick="processReplacements()">
+                <span>Replace</span>
+            </button>
+            <button class="btn-3d btn-success" onclick="copyText()">
+                <span>Copy</span>
+            </button>
+        </div>
+
+        <div class="editor-container">
+            <div id="editor" contenteditable="true"></div>
+            <button class="clear-btn" onclick="clearEditor()">✕</button>
+        </div>
+
+        <div id="alert" class="alert success">Copied successfully!</div>
+    </div>
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js"></script>
+</body>
+</html>
